@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card" style="width: 400px; height: fit-content;">
+    <div class="card-header" style="font-weight: 600; padding: 10px; text-align: center; background-color: rgb(150, 247, 247);">
+        {{ customer_record.first_name }}
+        {{ customer_record.last_name }}
+    </div>
+    <div class="card-body">
+        <p class="card-text" style="font-weight: 400; padding: 10px;">
+            <strong>E-mail: </strong>{{ customer_record.email }}<br />
+            <strong>Phone: </strong>{{ customer_record.phone }}<br />
+            <strong>Address: </strong>{{ customer_record.address }}<br />
+            <strong>City: </strong>{{ customer_record.city }}<br />
+            <strong>State: </strong>{{ customer_record.state }}<br />
+            <strong>created at: </strong>{{ customer_record.created_at }}<br />
+            <strong>Zipcode: </strong>{{ customer_record.zipcode }}<br />
+            <strong>ID: </strong>{{ customer_record.id }}<br />
+        </p>
+        <div>
+            <a href="{% url 'update_record' customer_record.id %}" class="btn btn-warning custom-btn">Update record</a>
+        </div>
+    </div>
+</div>
+<div class="card-btn">
+    <a href="{% url 'home' %}" class="btn btn-primary custom-btn">Back</a>
+    <a href="{% url 'delete_record' customer_record.id %}" class="btn btn-danger custom-btn">Delete</a>
+</div>
+
+<style>
+    .custom-btn {
+        width: 150px;
+        font-weight: bold;
+        margin-right: 20px; 
+        margin-top: 20px;
+    }
+</style>
+
+{% endblock %}

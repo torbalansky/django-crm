@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6" style="max-width: 500px;">
+      <h1 class="text-center">Add record</h1>
+
+      <form method="POST" action="{% url 'add_record' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <a href="{% url 'home' %}" class="btn btn-primary custom-btn">Back</a>
+        <button type="submit" class="btn btn-success btn-block mt-3" style=" margin: 15px;">Add record</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
