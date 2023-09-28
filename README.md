@@ -17,7 +17,7 @@ This project aims to create a simple CRM (Customer Relationship Management) syst
 
 To run this project locally on your machine, follow these steps:
 
-- git clone https://github.com/your-username/django-crm.git (Clone this repository to your local machine.)
+- git clone https://github.com/torbalansky/django-crm.git (Clone this repository to your local machine.)
 - cd django-crm (Navigate to the project directory.)
 - python -m venv venv (Create a virtual environment. Optional but recommended).
 - Activate the virtual environment.
