@@ -21,10 +21,10 @@ To run this project locally on your machine, follow these steps:
 - cd django-crm (Navigate to the project directory.)
 - python -m venv venv (Create a virtual environment. Optional but recommended).
 - Activate the virtual environment.
-### On Windows
+**On Windows**
 venv\Scripts\activate
 
-### On macOS and Linux
+**On macOS and Linux**
 source venv/bin/activate
 
 - pip install -r requirements.txt (Install project dependencies.)
