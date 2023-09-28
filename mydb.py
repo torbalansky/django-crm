@@ -4,15 +4,18 @@
 #pip install mysql-connector-python
 
 import mysql.connector
+from decouple import config
+
+db_password = config('DB_PASSWORD')
 
 dataBase = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
-    passwd = 'Gengen90!'
+    passwd=db_password
 
     )
 
-#Preprae cursor object
+#Prepare cursor object
 cursorObject = dataBase.cursor()
 
 #Create database
