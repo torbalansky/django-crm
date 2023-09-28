@@ -21,6 +21,7 @@ To run this project locally on your machine, follow these steps:
 - cd django-crm (Navigate to the project directory.)
 - python -m venv venv (Create a virtual environment. Optional but recommended).
 - Activate the virtual environment.
+
 **On Windows**
 venv\Scripts\activate
 
@@ -30,3 +31,5 @@ source venv/bin/activate
 - pip install -r requirements.txt (Install project dependencies.)
 - python manage.py migrate (Apply database migrations.)
 - python manage.py runserver (Start the development server.)
+
+Now you can access the project locally by opening a web browser and visiting http://localhost:8000/.
