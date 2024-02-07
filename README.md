@@ -1,6 +1,6 @@
 # Django CRM 
 
-This project has been created for educational purposes and serves as a hands-on experience for learning Django, a popular Python web framework. It's designed to help you understand the fundamentals of web development, user authentication, and database management with Django.
+This project has been created for educational purposes and serves as a hands-on experience for learning Django, a popular Python web framework. 
 
 ## About the Project
 
